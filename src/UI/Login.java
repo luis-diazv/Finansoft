@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Main {
+public class Login {
     private JTextField textField1;
     private JPasswordField passwordField1;
     private JButton ingresarButton;
@@ -14,7 +14,7 @@ public class Main {
     private JPanel LoginPanel;
     private static JPanel screen;
 
-    public Main() {
+    public Login() {
         ingresarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -32,7 +32,7 @@ public class Main {
         frame.setLocationRelativeTo(null); // Centrar la ventana en la pantalla
 
         screen = new JPanel(new CardLayout());
-        Main loginPanel = new Main();
+        Login loginPanel = new Login();
         pruebaScreen pruebaScreen= new pruebaScreen();
 
         // Añadir las pantallas al contenedor
